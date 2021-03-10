@@ -1,0 +1,89 @@
+{
+  "feed": [
+    {
+      "_id": "1",
+      "userId": "user-1",
+      "status": "This is an example status. Isn't it great?!",
+      "publishedAt": "2019-09-12T15:52:01.169Z",
+      "parentStatusId": null
+    },
+    {
+      "_id": "t-1",
+      "userId": "user-1",
+      "status": "This is an example response, which is really just a status with a parent. Isn't it great?!",
+      "publishedAt": "2019-09-12T15:52:01.169Z",
+      "parentStatusId": "1"
+    },
+    {
+      "_id": "fEAKBnc2c",
+      "userId": "user-2",
+      "status": "yee",
+      "publishedAt": "2020-11-12T03:35:01.321Z",
+      "parentStatusId": "1"
+    },
+    {
+      "_id": "G-vxE8gJJ",
+      "userId": "user-2",
+      "status": "yeah",
+      "publishedAt": "2020-11-12T04:33:15.719Z",
+      "parentStatusId": "1"
+    },
+    {
+      "_id": "xhKy20UfZ",
+      "userId": "user-2",
+      "status": "well, this app is finally working!",
+      "publishedAt": "2020-11-12T04:34:40.787Z"
+    },
+    {
+      "_id": "u1k2b22Yv",
+      "userId": "user-2",
+      "status": "I like that a lot",
+      "publishedAt": "2020-11-12T04:34:54.401Z",
+      "parentStatusId": "xhKy20UfZ"
+    },
+    {
+      "_id": "vT6lCVOOs",
+      "userId": "user-2",
+      "status": "YAY FINISHED RN COURSE!",
+      "publishedAt": "2020-11-12T04:40:49.235Z"
+    },
+    {
+      "_id": "qnQXkvYbY",
+      "userId": "user-2",
+      "status": "whoa that's so cool!",
+      "publishedAt": "2020-11-12T04:41:06.623Z",
+      "parentStatusId": "vT6lCVOOs"
+    },
+    {
+      "_id": "md4PJMCOG",
+      "userId": "user-2",
+      "status": "howdy folks",
+      "publishedAt": "2020-11-12T04:44:57.004Z"
+    }
+  ],
+  "users": [
+    {
+      "_id": "user-1",
+      "avatarUri": "https://picsum.photos/id/237/200",
+      "name": "Jane Doe",
+      "username": "@jane_doe"
+    },
+    {
+      "_id": "user-2",
+      "avatarUri": "https://picsum.photos/id/238/200",
+      "name": "John Doe",
+      "username": "@john_doe"
+    }
+  ],
+  "likes": {
+    "user-2": {
+      "1": false,
+      "t-1": true,
+      "G-vxE8gJJ": true,
+      "xhKy20UfZ": false,
+      "vT6lCVOOs": true,
+      "qnQXkvYbY": true,
+      "md4PJMCOG": false
+    }
+  }
+}
